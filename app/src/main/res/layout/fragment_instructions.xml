@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <ImageView
+                android:background="@color/colorPrimaryDark"
+                android:id="@+id/instructions_image"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:srcCompat="@android:drawable/ic_dialog_info" />
+
+        <TextView
+                android:id="@+id/instructions_text_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instructions_text_1"/>
+
+        <TextView
+                android:id="@+id/instructions_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instructions_text_2"/>
+
+        <Button
+                android:id="@+id/instructions_next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/next_button"/>
+
+    </LinearLayout>
+</layout>
