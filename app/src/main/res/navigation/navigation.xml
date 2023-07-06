@@ -13,5 +13,12 @@
                 app:destination="@id/instructionsFragment"/>
     </fragment>
     <fragment android:id="@+id/instructionsFragment" android:name="com.udacity.shoestore.screens.InstructionsFragment"
-              android:label="InstructionsFragment"/>
+              android:label="InstructionsFragment">
+        <action android:id="@+id/action_instructionsFragment_to_shoeListFragment"
+                app:destination="@id/shoeListFragment"/>
+    </fragment>
+    <fragment android:id="@+id/shoeListFragment" android:name="com.udacity.shoestore.screens.ShoeListFragment"
+              android:label="ShoeListFragment">
+        <action android:id="@+id/action_shoeListFragment_to_loginFragment" app:destination="@id/loginFragment"/>
+    </fragment>
 </navigation>
